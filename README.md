@@ -2,9 +2,7 @@
 
 The SF Symbols Viewer is a user-friendly application that allows you to explore and interact with Apple's SF Symbols library. SF Symbols is a set of over 5,000 icons and symbols that are designed to work seamlessly with Apple's user interface frameworks. With this app, you can effortlessly browse, select, and preview SF Symbols, customize their appearance, and even view animated versions.
 
-![SF Symbols Viewer App Screenshot](assets/battery+100.jpg)
-
-![SF Symbols Viewer App Screenshot](assets/bell+menu.jpg)
+<img src="assets/wifi.gif" width="250"><img src="assets/battery+100.jpg" width="250"><img src="assets/bell+menu.jpg" width="250">
 
 ## Features
 
