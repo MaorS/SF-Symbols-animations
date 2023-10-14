@@ -13,6 +13,11 @@
 		33D4D7222ADAA74A00133B0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D4D7202ADAA74A00133B0E /* Main.storyboard */; };
 		33D4D7242ADAA74A00133B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D4D7232ADAA74A00133B0E /* Assets.xcassets */; };
 		33D4D7272ADAA74A00133B0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D4D7252ADAA74A00133B0E /* LaunchScreen.storyboard */; };
+		33D4D7322ADAA78B00133B0E /* SymbolCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4D72E2ADAA78B00133B0E /* SymbolCollectionViewCell.swift */; };
+		33D4D7332ADAA78B00133B0E /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4D72F2ADAA78B00133B0E /* Effect.swift */; };
+		33D4D7342ADAA78B00133B0E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4D7302ADAA78B00133B0E /* ViewModel.swift */; };
+		33D4D7352ADAA78B00133B0E /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4D7312ADAA78B00133B0E /* Presenter.swift */; };
+		82B2006B70FA887EEB2F72DC /* Pods_SFSymbolsAnimations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BCDF181039B1A447636A45 /* Pods_SFSymbolsAnimations.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,13 @@
 		33D4D7232ADAA74A00133B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33D4D7262ADAA74A00133B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33D4D7282ADAA74A00133B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D4D72E2ADAA78B00133B0E /* SymbolCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolCollectionViewCell.swift; sourceTree = "<group>"; };
+		33D4D72F2ADAA78B00133B0E /* Effect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
+		33D4D7302ADAA78B00133B0E /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		33D4D7312ADAA78B00133B0E /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		885D0E35D3F4EA1A9FF6915B /* Pods-SFSymbolsAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFSymbolsAnimations.debug.xcconfig"; path = "Target Support Files/Pods-SFSymbolsAnimations/Pods-SFSymbolsAnimations.debug.xcconfig"; sourceTree = "<group>"; };
+		B7BCDF181039B1A447636A45 /* Pods_SFSymbolsAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFSymbolsAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB6BBA98C62196F66ADF6E8 /* Pods-SFSymbolsAnimations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFSymbolsAnimations.release.xcconfig"; path = "Target Support Files/Pods-SFSymbolsAnimations/Pods-SFSymbolsAnimations.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82B2006B70FA887EEB2F72DC /* Pods_SFSymbolsAnimations.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				33D4D7192ADAA74A00133B0E /* SFSymbolsAnimations */,
 				33D4D7182ADAA74A00133B0E /* Products */,
+				9984035890FD48E8D30F3326 /* Pods */,
+				D3E1D82779FF705DD40A4CB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +71,10 @@
 		33D4D7192ADAA74A00133B0E /* SFSymbolsAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				33D4D72F2ADAA78B00133B0E /* Effect.swift */,
+				33D4D7312ADAA78B00133B0E /* Presenter.swift */,
+				33D4D72E2ADAA78B00133B0E /* SymbolCollectionViewCell.swift */,
+				33D4D7302ADAA78B00133B0E /* ViewModel.swift */,
 				33D4D71A2ADAA74A00133B0E /* AppDelegate.swift */,
 				33D4D71C2ADAA74A00133B0E /* SceneDelegate.swift */,
 				33D4D71E2ADAA74A00133B0E /* ViewController.swift */,
@@ -67,6 +86,23 @@
 			path = SFSymbolsAnimations;
 			sourceTree = "<group>";
 		};
+		9984035890FD48E8D30F3326 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				885D0E35D3F4EA1A9FF6915B /* Pods-SFSymbolsAnimations.debug.xcconfig */,
+				FFB6BBA98C62196F66ADF6E8 /* Pods-SFSymbolsAnimations.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D3E1D82779FF705DD40A4CB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7BCDF181039B1A447636A45 /* Pods_SFSymbolsAnimations.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33D4D72B2ADAA74A00133B0E /* Build configuration list for PBXNativeTarget "SFSymbolsAnimations" */;
 			buildPhases = (
+				02664CBE1D05451A3CCBB6CA /* [CP] Check Pods Manifest.lock */,
 				33D4D7132ADAA74A00133B0E /* Sources */,
 				33D4D7142ADAA74A00133B0E /* Frameworks */,
 				33D4D7152ADAA74A00133B0E /* Resources */,
+				B40F1BCFB3DBDB9FBF4C93AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +171,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02664CBE1D05451A3CCBB6CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SFSymbolsAnimations-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B40F1BCFB3DBDB9FBF4C93AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SFSymbolsAnimations/Pods-SFSymbolsAnimations-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SFSymbolsAnimations/Pods-SFSymbolsAnimations-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SFSymbolsAnimations/Pods-SFSymbolsAnimations-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		33D4D7132ADAA74A00133B0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D4D7332ADAA78B00133B0E /* Effect.swift in Sources */,
+				33D4D7352ADAA78B00133B0E /* Presenter.swift in Sources */,
 				33D4D71F2ADAA74A00133B0E /* ViewController.swift in Sources */,
 				33D4D71B2ADAA74A00133B0E /* AppDelegate.swift in Sources */,
+				33D4D7322ADAA78B00133B0E /* SymbolCollectionViewCell.swift in Sources */,
+				33D4D7342ADAA78B00133B0E /* ViewModel.swift in Sources */,
 				33D4D71D2ADAA74A00133B0E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,11 +371,13 @@
 		};
 		33D4D72C2ADAA74A00133B0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 885D0E35D3F4EA1A9FF6915B /* Pods-SFSymbolsAnimations.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SFSymbolsAnimations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,11 +400,13 @@
 		};
 		33D4D72D2ADAA74A00133B0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFB6BBA98C62196F66ADF6E8 /* Pods-SFSymbolsAnimations.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SFSymbolsAnimations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
